@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Savics</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="savics.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="savicsresp.css" />
+        <link href="fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+<body>
+    
+<div class="overlay">
+<!-- <img src="images/default-monochrome.svg" alt="logo" width="100px"> -->
+   
+</div>
+<div class="container">
+    <div class="nav">
+         <img src="images/default-monochrome-white.svg" alt="logo">
+         <ul class="ul">
+             <li><a href="index.html" onclick="toggle()">Home</a></li>
+             <li><a href="#profile" onclick="toggle()">Profile</a></li>
+             <li><a href="#birthday_calculator" onclick="toggle()">Birthday Calculator</a></li>
+             <li><a href="#contact" onclick="toggle()">Contact</a> </li>
+         </ul>
+    <div class="menu_icon">
+        <i class="fas fa-bars"></i>
+    </div>
+    </div>
+    <div class="header">
+        <div class="header_write">
+             <img src="images/pngfind.com-happy-birthday-in-png-1461549.png" alt="">
+             <h1>Adighibe <span>Victor - </span> (Savics) </h1>
+             <p class=""><q>Observe people who are good at their <span>work</span> - skilled workers are always in  <br> <span>demand</span> and <span>admired</span>; they don't take a back seat to anyone.</q> </p>
+             <button><a href="#profile"><span>See More!</span></a></button>
+        </div>
+        <div class="header_image">
+             <img src="images/Undeniable.jpg" alt="">
+        </div>
+    </div>
+
+     <!-- [PROFILE SECTION] -->
+    <div class="section" id="profile">
+
+        <div class="profile" >
+            <div class="profile_image">
+                <img src="images/profilePicture.jpg" alt="Profile Picture">
+            </div>
+            <div class="profile_para">
+                <h1><span>Meet Adighibe Victor</span></h1>
+                <p>Victor is a nerd but a fun-loving and respectful person, his passion for tech and innovations brought him into the world of digital technology.
+                <br>
+                <br>
+                He is a professional <span><b> Web Developer</b></span> in the world of <span><b>Software Development</b></span>, he has built websites ranging from personal, professional to business websites. 
+                <br>
+                </br>
+                Due to certain experiences in life he believes strongly in the power of Skills with his conviction from <span><b>[Proverbs 22:29].</b></span>
+                <br>
+                </br>
+                He serves in the vain yard of the Lord under an arm of <span><b>Living Faith Church World Wide</b></span> and having worked with men of different classes, Victor have proved to be a man of integrity in his dealings with men coupled with delivering quick and excellent Jobs to his clients.
+                <br>
+                <br>
+                He studied <span><b>Computer Science</b></span> in Abia State Polytechnic, Aba and currently resides in Aba. Considering his vast personal development skills, he is out to profer digital solutions to the world.</p>
+            </div>
+        </div>
+
+        <div class="birthday_gift" id="birthday_calculator">
+            <h1><span>I have a gift for you!</span></h1>
+            <p>It's my birthday today and I am super-duper excited to gift you with an opportunity to discover the exact day you were born.
+                <br>
+               I realised that so many people really don't know the day of their birth [me inclusive], I know the stress I had to go through just to discover mine. 
+               <br>I built a <span><b>Birthday Calculator</b></span> that makes it easier for anyone to discover the exact day they were born and you too can. I was born on a Monday.
+            </p>
+            <div class="header_write button">
+                <button onclick="showBday()"><span>Explore..</span></button>
+            </div>
+            <div class="dayOfBirth">
+                <form class="input">
+
+                    <label class="hund">Your Full Name:</label>
+                    <input class="hund" id="fName" type="text" placeholder="..." required >
+                    <!-- <label class="hund">Last Name:</label>
+                    <input class="hund" id="fName" type="text" placeholder="..." required> -->
+
+                    <a href="#birthday_calculator"><button onclick="calc()">Continue</button></a>
+
+                </form>
+
+                <div class="form_container">
+                    <h2><span>My Birthday Gift to You</span></h2>
+                    <p>Discover the day you were born!</p>
+                    <div class="date_section">
+                        <p>Your Birth Date:</p>
+                        <input id="in" type="date">   
+                        <!-- <input id="in" type="text" placeholder="01 January 1900"> -->
+                        <button onclick="displayDay()">Submit</button>
+                    </div>
+                    <p id="day"></p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer id="Social">
+		<!-- <p>
+			<a href="#Home">
+				<i class="fa fa-chevron-circle-up"></i>
+			</a>
+        </p> -->
+        <h2 id="contact"><span>Get in Touch</span></h2>
+        <div class="get_in_touch_section">
+
+            <div class="envelope">
+                    <i class="fa fa-envelope"></i>
+            </div>
+            <div class="info">
+                <p>I believe I have won a friend, a business partner, a co-creator and an innovator.<br>
+                    <br>Have I aroused your interest and you want to personally convince yourself of my abilities? </p>	
+                
+                <br>Get in touch with me through any of the sources <span><a href="#Social">below. <i class="fa fa-arrow-down"></i></a></span> </p>
+                <div style="margin-top: 20px; line-height: 20px;">
+                    <h3>Contact Details</h3>
+                    <p style="font-size: 14px;">     Adighibe Victor<br>
+                        +23408106750047 <br>
+                        <a href="mailto:adighibevictor@yahoo.com">adighibevictor@yahoo.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="socials"> 
+            <p>
+                &copy Copyright 2021 - Savics
+            </p>
+            <ul class="socials_icons">
+                <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+	</footer>
+</div>
+
+
+<script src="bDAy.js"></script>
+
+
+
+</body>
+</html>

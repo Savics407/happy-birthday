@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Birthday Calc.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="bDay.css" />
+	<link href="fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <style>
+
+    </style>
+</head>
+<body>
+    <!-- LANDING PAGE -->
+    <div id="landing">
+        <div class="landing_firstSection">
+            <img src="images/default-monochrome-white.svg ">
+        </div>
+        <div class="login_form">
+            <div class="login">
+                <h4 class="center">Join Over 1 million people around the globe to know the exact day you were born using your Date of birth.</h4>
+               <div class="name">
+                    <label class="hund">First Name</label>
+                    <input class="hund" id="fName" type="text" placeholder="...">
+                    <button>Continue</button>
+                    <!-- <p class="center">Or</p>
+                    <div class="google hund center">
+                        <img src="images/Google.png"> Continue with Google
+                    </div>
+                    <div class="facebook hund center">
+                        <i class="fab fa-facebook-square"></i>Continue with Facebook</div>
+                    <div class="apple hund center">
+                        <i class="fab fa-apple"></i>Continue with Apple</div>
+                </div> -->
+                <p class="terms hund center">Terms and Condition Applies</p>
+            </div>
+        </div>
+    </div>
+    <!-- HOME PAGE -->
+    <div id="home_page">
+        <div class="navbar">
+                <img src="images/default-monochrome-black.svg ">
+                <div class="links">
+                    <ul>
+                        <li>
+                            <a href="">About</a><i class="fas fa-birthday-cake"></i>
+                        </li>
+                        <li>
+                            <a href="">Services</a><i class="fas fa-birthday-cake"></i>
+                        </li>
+                        <li>
+                            <a href="">blog</a><i class="fas fa-birthday-cake"></i>
+                        </li>
+                        <li>
+                            <a href="">Contact</a><i class="fas fa-birthday-cake"></i>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        <div class="form_container">
+            <h2>My Birthday Gift to You</h2>
+            <p>Discover the day you were born</p>
+            <div class="date_section">
+                <p>Your Birth Date:</p>
+                <input id="in" type="date">   
+                <!-- <input id="in" type="text" placeholder="01 January 1900"> -->
+                <button onclick="displayDay()">Submit</button>
+            </div>
+            <p id="day"></p>
+        </div>
+    </div>
+
+    <div class="idea">
+        <marquee>Idea: You can integrate Birthday Generator into your code which will be generating birthday messages</marquee>
+    </div>
+
+    <script src="bDAy.js"></script>
+</body>
+</html>
