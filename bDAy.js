@@ -30,7 +30,7 @@ function calc() {
     } else {
         check.style.display = "block";
         birthday.style.border = "none";
-        input.style.display= "none";
+        // input.style.display= "none";
     
     }
 }
@@ -38,25 +38,25 @@ function displayDay() {
     var d = new Date(document.getElementById('in').value);
     var c = d.getDay();
     var a = document.getElementById('fName').value;
-    var name = a + " You were born on";
+    var name = '"' + a + " You were born on";
 //      var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 //     document.getElementById("day").innerHTML = days[d.getDay()];
 // // // }
 // function displayDay() {    
     if (c == 0) {
-    document.getElementById('day').innerHTML = name + " SUNDAY"                      
+    document.getElementById('day').innerHTML = name + " SUNDAY" + '"';                     
     } else if (c == 1) {
-    document.getElementById('day').innerHTML = name + " MONDAY"                      
+    document.getElementById('day').innerHTML = name + " MONDAY" + '"';                     
     }  else if (c == 2) {
-    document.getElementById('day').innerHTML = name + " TUESDAY"                      
+    document.getElementById('day').innerHTML = name + " TUESDAY" + '"';                
     } else if (c == 3) {
-    document.getElementById('day').innerHTML = name + " WEDNESDAY"                      
+    document.getElementById('day').innerHTML = name + " WEDNESDAY" + '"';                 
     } else if (c == 4) {
-    document.getElementById('day').innerHTML = name + " THURSDAY"                      
+    document.getElementById('day').innerHTML = name + " THURSDAY" + '"';              
     } else if (c == 5) {
-    document.getElementById('day').innerHTML = name + " FRIDAY"                      
+    document.getElementById('day').innerHTML = name + " FRIDAY" + '"';             
     } else if (c == 6) {
-    document.getElementById('day').innerHTML = name + " SATURDAY"                      
+    document.getElementById('day').innerHTML = name + " SATURDAY" + '"';                 
     } else {
         alert("Please Select your Date of Birth");
     }
